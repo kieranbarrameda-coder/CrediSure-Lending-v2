@@ -10,12 +10,12 @@
 
 // Replace the placeholder values with your Firebase project's config
 const firebaseConfig = {
-  apiKey: 'REPLACE_ME',
-  authDomain: 'REPLACE_ME',
-  projectId: 'REPLACE_ME',
-  storageBucket: 'REPLACE_ME',
-  messagingSenderId: 'REPLACE_ME',
-  appId: 'REPLACE_ME'
+  apiKey: "AIzaSyDnuEQ0JrjbK-DcATslQFSJPWhB9amrKIQ",
+  authDomain: "credisure-lending.firebaseapp.com",
+  projectId: "credisure-lending",
+  storageBucket: "credisure-lending.firebasestorage.app",
+  messagingSenderId: "571106413421",
+  appId: "1:571106413421:web:daec10669aa6a1ae936864"
 };
 
 if (!firebase.apps.length) {
