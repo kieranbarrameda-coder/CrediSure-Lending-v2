@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CrediSure Admin</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script defer src="firebase.js"></script>
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">CrediSure Admin</div>
+      <nav class="nav-links">
+        <a href="index.html">Back to site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="content-card admin-card">
+        <h2>Admin Panel</h2>
+
+        <div id="authArea" class="auth-area">
+          <form id="loginForm" class="auth-form">
+            <div class="field"><label for="adminEmail">Admin email</label><input type="email" id="adminEmail" required /></div>
+            <div class="field"><label for="adminPassword">Password</label><input type="password" id="adminPassword" required /></div>
+            <div class="field actions"><button type="submit" class="btn">Sign in</button></div>
+            <p id="authStatus" class="status"></p>
+          </form>
+        </div>
+
+        <div id="panel" style="display:none;">
+          <div class="panel-header">
+            <h3>Contact Submissions</h3>
+            <div class="panel-actions">
+              <button id="refreshBtn" class="btn ghost">Refresh</button>
+              <button id="signOutBtn" class="btn ghost">Sign out</button>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table id="contactsTable" class="contacts-table">
+              <thead><tr><th>Date</th><th>Name</th><th>Email</th><th>Message</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>

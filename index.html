@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CrediSure Lending</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase compat SDK (keep if using compat) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script defer src="firebase.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">CrediSure Lending</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="admin.html" class="admin-link">Admin</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container content-card">
+        <h1>Fast, Secure, and Trusted Lending Solutions</h1>
+        <p class="lead">CrediSure Lending helps individuals and businesses access responsible credit with ease.</p>
+        <a class="cta" href="#contact">Apply Now</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container content-card">
+        <h2>About Us</h2>
+        <p>CrediSure Lending is committed to transparent, responsible lending. Our mission is to help our clients reach their goals with fair rates and quick approvals.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container content-card">
+        <h2>Our Services</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Personal Loan</h3>
+            <p>Flexibility for personal expenses with competitive rates.</p>
+          </div>
+          <div class="card">
+            <h3>Business Loan</h3>
+            <p>Working capital and expansion loans for small & medium enterprises.</p>
+          </div>
+          <div class="card">
+            <h3>Car Loan</h3>
+            <p>Fast approval to get you back on the road.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container content-card">
+        <h2>Gallery</h2>
+        <div class="gallery-grid" id="galleryGrid">
+          <img src="images/office1.jpg" alt="Office" loading="lazy" />
+          <img src="images/office2.jpg" alt="Team" loading="lazy" />
+          <img src="images/office3.jpg" alt="Reception" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container content-card">
+        <h2>Contact Us</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="field"><label for="name">Name</label><input type="text" id="name" required /></div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" required /></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" rows="4" required></textarea></div>
+          <div class="field actions"><button type="submit" class="btn">Send Message</button></div>
+          <p id="contactStatus" class="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> CrediSure Lending</div>
+      <div>Contact: <a href="mailto:info@credisure.example">info@credisure.example</a></div>
+    </div>
+  </footer>
+</body>
+</html>
