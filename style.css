@@ -72,6 +72,57 @@ input,textarea{padding:0.6rem;border:1px solid #d6dbe8;border-radius:8px;font-si
 .footer{border-top:1px solid rgba(10,37,64,0.06);padding:1rem 0;margin-top:1.6rem}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
 
+/* Login */
+.auth-form {
+  background: var(--card-bg);
+  padding: 1.6rem;
+  border-radius: var(--radius);
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 20px rgba(9, 30, 66, 0.06);
+}
+.auth-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.auth-form label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.auth-form input {
+  padding: 0.6rem;
+  border: 1px solid #d6dbe8;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+.auth-form button {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+}
+.auth-form button:hover {
+  background: #0a4cb0;
+}
+.panel-header button {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  margin-left: 0.6rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.panel-header button:hover {
+  background: #0a4cb0;
+}
+
 /* Admin styles */
 .admin-card{padding:1.6rem}
 .panel-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.8rem}
