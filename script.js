@@ -1,13 +1,24 @@
 // Main site interactions
 document.addEventListener('DOMContentLoaded', ()=>{
   document.getElementById('year').textContent = new Date().getFullYear();
-  // nav toggle for small screens
-  const toggle = document.querySelector('.nav-toggle');
-  toggle?.addEventListener('click', ()=>{
-    const links = document.getElementById('navLinks');
-    if(!links) return;
-    links.style.display = (links.style.display === 'block') ? '' : 'block';
+ // nav toggle for small screens
+const toggle = document.querySelector('.nav-toggle');
+const links = document.getElementById('navLinks');
+
+if (toggle && links) {
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('show');
+    toggle.textContent = isOpen ? '✕' : '☰'; // switch between hamburger and X
   });
+
+  // Close nav when a link is clicked (optional but recommended)
+  links.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      links.classList.remove('show');
+      toggle.textContent = '☰';
+    });
+  });
+}
 
   // gallery modal
   const gallery = document.getElementById('galleryGrid');
