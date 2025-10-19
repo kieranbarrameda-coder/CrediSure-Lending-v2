@@ -31,10 +31,21 @@ body{
 .content-card{background:var(--card-bg);border-radius:var(--radius);padding:2rem;box-shadow:0 6px 20px rgba(9,30,66,0.06)}
 
 /* Nav */
-.nav{position:sticky;top:0;z-index:60;padding:0.6rem 0}
-.nav-inner{display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:700;color:var(--blue);font-size:1.1rem}
-.nav-links a{margin-left:1rem;text-decoration:none;color:var(--text);font-weight:600}
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #194bc8; /* Solid blue navbar */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;background-color: #194bc8; /* Ensure inner stays blue */
+  padding: 0.6rem 2rem;
+          }
+.brand{font-weight:700;color:white;font-size:1.1rem}
+.nav-links a{margin-left:1rem;text-decoration:none;color:white;font-weight:600}
+.nav-links a:hover {
+  color: #b3d4fc; /* Light blue hover */
+}
 .nav-toggle{display:none;background:none;border:0;font-size:1.2rem}
 
 /* Hero */
